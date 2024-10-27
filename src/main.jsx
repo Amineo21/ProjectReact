@@ -1,23 +1,27 @@
 import { createRoot } from "react-dom/client";
-import App from "./mocktail/App";
+import App from "./mocktail/App"
+import App from "./Partie Recette/App"
+
+import AppRecette from "./Partie Recette/App"
 import AppTime from "./DateHeure/DateHeure";
-import AppRecette from './Partie Recette/Recette'
-import AppBlague from './Blague/App';
-import AppCitation from './Citation/App'
-import EventApp from "./Event_historique/EventApp"
+import AppBlague from "./Blague/App";
+import AppCitation from "./Citation/App"
 
 
 const racineProjet = createRoot(document.querySelector("#root"));
 
+
+
+
+
 racineProjet.render(
 <>
+<AppTime></AppTime>
 <App/>
+<AppRecette></AppRecette>
 <AppBlague></AppBlague>
 <AppCitation></AppCitation>
-<AppRecette></AppRecette>
-<AppTime></AppTime>
-<EventApp></EventApp>
-</>
-)
 
+</>
+);
 

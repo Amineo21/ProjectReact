@@ -1,6 +1,6 @@
 import Citation from "./Citation"
 
-const App = () =>{
+const AppCitation = () =>{
   return(
     <div>
        <Citation /> 
@@ -8,4 +8,4 @@ const App = () =>{
   )
 }
 
-export default App
+export default AppCitation

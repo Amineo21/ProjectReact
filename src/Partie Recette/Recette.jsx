@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Recette.css';
 
 
-const Recette = () => {
+const AppRecette = () => {
   const [recette, setRecette] = useState(null);
   const [afficherDetails, setAfficherDetails] = useState(false);
 
@@ -62,4 +62,4 @@ const Recette = () => {
   );
 };
 
-export default Recette;
+export default AppRecette;

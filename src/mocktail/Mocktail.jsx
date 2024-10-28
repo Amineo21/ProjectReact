@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../../public/assets/styles.css" ;
 
 function MocktailOfTheDay() {
     const [mocktails, setMocktails] = useState([]);
@@ -28,8 +29,9 @@ function MocktailOfTheDay() {
         <div>
             {randomMocktail ? (
                 <div>
+                    <h1>Mocktail du jour</h1>
                     <p>Le mocktail du jour est : {randomMocktail.strDrink}</p>
-                    <img src={randomMocktail.strDrinkThumb} alt="" style={{ maxWidth: "200px" }}/>
+                    <img src={randomMocktail.strDrinkThumb} alt=""/>
 
                 </div>
 

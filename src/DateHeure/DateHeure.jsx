@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import "../../public/assets/styles.css" ;
 
-const AppTime = () => {
+
+const Time = () => {
   
   const [time, setTime] = useState('');
   const [date, setDate] = useState('');
@@ -45,4 +47,4 @@ const AppTime = () => {
   );
 };
 
-export default AppTime;
+export default Time;

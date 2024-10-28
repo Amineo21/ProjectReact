@@ -1,28 +1,29 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
+import "../../public/assets/styles.css";
 
-function Blague (){
-    const [blague, setBlague] = useState([])
+function Blague() {
+  const [blague, setBlague] = useState([]);
 
-    function fetchCitation(){
-        fetch('https://official-joke-api.appspot.com/random_joke')
-        .then((res) => (res.json()))
-        .then((data) => setBlague(data))
-        .catch((err) => console.error(err))
-    }
+  function fetchCitation() {
+    fetch("https://official-joke-api.appspot.com/random_joke")
+      .then((res) => res.json())
+      .then((data) => setBlague(data))
+      .catch((err) => console.error(err));
+  }
 
-useEffect(() =>{
-    fetchCitation()
-}, []);
+  useEffect(() => {
+    fetchCitation();
+  }, []);
 
-return(
+  return (
     <div>
-        <p> Blague du jour</p>
-        <li> Type  : {blague.type} </li>
-        <li>  Setup : {blague.setup} </li>
+      <h1> Blague du jour</h1>
+      <ul>
+        <li> Type : {blague.type} </li>
+        <li> Setup : {blague.setup} </li>
         <li> Punchline : {blague.punchline} </li>
-
+      </ul>
     </div>
-)
-
+  );
 }
-export default Blague
+export default Blague;

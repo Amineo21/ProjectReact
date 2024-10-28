@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import "../../public/assets/styles.css" ;
+
 
 function EvenementsHistoriques() {
   const [evenements, setEvenements] = useState([]);
@@ -16,7 +18,7 @@ function EvenementsHistoriques() {
 
   return (
     <div>
-      <h3>Événements Historiques</h3>
+      <h1>Événements Historiques</h1>
       <ul>
         {evenements.map((event, index) => (
           <li key={index}>

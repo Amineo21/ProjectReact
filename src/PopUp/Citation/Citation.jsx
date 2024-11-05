@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../../public/assets/styles.css";
+import "../../../public/assets/styles.css";
 
 function Citation() {
   const [citation, setCitation] = useState([]);

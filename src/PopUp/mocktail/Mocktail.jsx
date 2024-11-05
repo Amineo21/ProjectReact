@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../../public/assets/styles.css" ;
+import "../../../public/assets/styles.css" ;
 
 function MocktailOfTheDay() {
     const [mocktails, setMocktails] = useState([]);

@@ -1,16 +1,24 @@
-import Recette from "./Partie Recette/Recette";
-import MocktailOfTheDay from "./mocktail/Mocktail";
-import EvenementsHistoriques from "./Event_historique/event";
-import Time from "./DateHeure/DateHeure";
-import Citation from "./Citation/Citation";
-import Blague from "./Blague/Blague";
+// import Recette from "./PopUp/Partie Recette/Recette";
+// import MocktailOfTheDay from "./PopUp/mocktail/Mocktail";
+// import EvenementsHistoriques from "./PopUp/Event_historique/event";
+// import Time from "./PopUp/DateHeure/DateHeure";
+// import Citation from "./PopUp/Citation/Citation";
+// import Blague from "./PopUp/Blague/Blague";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Acceuil from "./Acceuil";
+import MarkdownZone from "./Markdown/MarkdownZone";
 
 function App() {
   return (
     <>
-   
-      
-      <div className="Top">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Acceuil />} />
+          <Route path="/MarkdownZone" element={<MarkdownZone />} />
+        </Routes>
+      </Router>
+
+      {/* <div className="Top">
         <Time></Time>
       </div>
 
@@ -22,6 +30,7 @@ function App() {
       </div>
 
       <div className="center">
+         <File></File> 
         <h1>Hey</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti, repellendus voluptatum temporibus qui quae unde illo a atque inventore, dolorem expedita ullam blanditiis ea voluptates soluta optio alias omnis?</p>
       </div>
@@ -32,8 +41,7 @@ function App() {
         <Recette></Recette>
       </div>
       </div>
-      
-    
+       */}
     </>
   );
 }
